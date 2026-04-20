@@ -1,0 +1,70 @@
+<html>
+<head>
+<title>zadanie3</title>
+<meta charset="utf-8">
+
+<style>
+#wynik{
+    background-color: #000066;
+    width:100px;
+    text-align:center;
+    color:white;
+}
+</style>
+
+<script>
+function oblicz()
+{
+    var x = Number(document.getElementById("liczba1").value);
+    var y = Number(document.getElementById("liczba2").value);
+    var z = document.getElementById("wyb").value;
+    var wynik = document.getElementById("wynik");
+
+    if (isNaN(x) || isNaN(y)) {
+        wynik.innerHTML = "Błąd";
+        return;
+    }
+
+    if (z == "d1") wynik.innerHTML = x + y;
+    if (z == "d2") wynik.innerHTML = x - y;
+    if (z == "d3") wynik.innerHTML = x * y;
+    if (z == "d4") {
+        if (y == 0)
+            wynik.innerHTML = "Nie dziel przez 0!";
+        else
+            wynik.innerHTML = x / y;
+    }
+}
+</script>
+</head>
+
+<body>
+<form>
+<table>
+<tr>
+<td><input type="text" id="liczba1"></td>
+
+<td>
+<select id="wyb">
+<option value="d1">+</option>
+<option value="d2">-</option>
+<option value="d3">*</option>
+<option value="d4">/</option>
+</select>
+</td>
+
+<td><input type="text" id="liczba2"></td>
+
+<td id="wynik"></td>
+</tr>
+
+<tr>
+<td colspan="5">
+<input type="button" value="oblicz" onclick="oblicz()">
+</td>
+</tr>
+
+</table>
+</form>
+</body>
+</html>

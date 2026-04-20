@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>TWORZENIE SKRYPTÓW W JS</title>
+        <script>
+            function podaj_imie()
+            {
+                var imie=prompt("jak masz na imie? ");
+                if (imie==null || imie==" ")
+            {
+                document.write("miło ze jestes z nami!");
+            }
+            else
+            {
+                document.write("miło ze jestes z nami "+imie);
+            }
+            return imie;
+        }
+        </script>
+        </head>
+        <body onload="podaj_imie()">
+        </body>
+</html>
+                

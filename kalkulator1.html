@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Mój kalkulator</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Mój kalkulator</h1>
+
+    <input type="text" id="liczba1" placeholder="Pierwsza liczba">
+    
+    <select id="dzialanie">
+        <option value="+">Dodawanie (+)</option>
+        <option value="-">Odejmowanie (-)</option>
+        <option value="*">Mnożenie (*)</option>
+        <option value="/">Dzielenie (/)</option>
+    </select>
+
+    <input type="text" id="liczba2" placeholder="Druga liczba">
+
+    <button onclick="oblicz()">Oblicz</button>
+
+    <div id="wynik">Wynik: -</div>
+    <div id="komunikat"></div>
+
+    <img id="obrazek" src="wojownik.png" alt="obrazek">
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

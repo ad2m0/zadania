@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zwierzątka i wierszyki</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1> Kliknij zwierzątko!</h1>
+  </header>
+
+  <main>
+    <table class="animal-table">
+      <tr>
+        <td>
+          <img src="kotek.png" alt="Kotek" class="animal" id="kotek">
+        </td>
+        <td>
+          <img src="piesek.png" alt="Piesek" class="animal" id="piesek">
+        </td>
+        <td>
+          <img src="konik.png" alt="Konik" class="animal" id="konik">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="zabka.png" alt="Żabka" class="animal" id="zabka">
+        </td>
+        <td>
+          <img src="krowa.png" alt="Krowa" class="animal" id="krowa">
+        </td>
+        <td>
+          <img src="owieczka.png" alt="Owieczka" class="animal" id="owieczka">
+        </td>
+      </tr>
+    </table>
+  </main>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span id="closeBtn" class="close">&times;</span>
+      <h2 id="animalName"></h2>
+      <p id="animalPoem"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

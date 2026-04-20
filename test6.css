@@ -1,0 +1,55 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #f0f8ff;
+}
+
+.animal-table {
+  margin: 30px auto;
+  border-collapse: collapse;
+}
+
+.animal-table td {
+  padding: 15px;
+}
+
+.animal-table img {
+  width: 120px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.animal-table img:hover {
+  transform: scale(1.1);
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 400px;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 24px;
+}

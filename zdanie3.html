@@ -1,0 +1,23 @@
+<script>
+    function BMI(masa, wzrost) {
+        return masa / (wzrost * wzrost);
+    }
+
+    var masa = Number(prompt("Podaj masę ciała w kg:"));
+    var wzrost = Number(prompt("Podaj wzrost w metrach(np.1.75):"));
+
+    var wynik = BMI(masa, wzrost);
+
+    if (wynik < 18.5) {
+        alert("Twoje BMI wynosi " + wynik.toFixed(1) + " : Niedowaga");
+    }
+    else if (wynik < 25) {
+        alert("Twoje BMI wynosi " + wynik.toFixed(1) + " : Waga prawidłowa");
+    }  
+    else if (wynik < 30) {
+        alert("Twoje BMI wynosi " + wynik.toFixed(1) + " : Nadwaga");
+    }
+    else {
+        alert("Twoje BMI wynosi " + wynik.toFixed(1) + " : Otyłość");
+    }
+</script>

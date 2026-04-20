@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        body {
+            color: red;
+        }
+        div ~ p {
+            color: blue;
+        }
+        </style>
+        </head>
+        <body>
+            <div>
+                Ten tekst jest czerwony ponieważ dziedziczy kolor z elementu rodzica, czyli "body" oraz jest elementem "p", który byłby jednym z elementów braci elementu "div"
+            </div>
+            <div>
+                <p>
+                    ten tekst znajdujący sie w zawartości tego elemantu "p" nei jest koloru niebieskiego ponieważ nie jest bratem tylko elementeu "div". Dziedziczy natomiast kolor czerwony od elementu nadrzędnego jakim jest "body"
+                </p>
+            </div>
+            <p>
+                Ten tekst jest koloru niebieskiego ponieważ ten element "p" jest bratem elementu "div" a jego formatowanie jest nadrzędne niż formatowanie elementu "body"
+            </p>
+        </div>
+        <body>
+            <html>
+                
+            
+

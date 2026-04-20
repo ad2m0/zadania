@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>tworzenie tabel za pomoca pętli</title>
+    <style>
+        table,tr,td
+        {
+            border:1px solid blue;
+        }
+        <table> 
+            {
+                width:400px;
+                text-align: center;
+            }
+            </style>
+           
+</head>
+<body>
+    
+
+ <script>
+    var i=1,a;
+    document.write("<table><tr>");
+        while(i<=10)
+    {
+        a=parseInt(Math.random()*100+1);
+        document.write("<td>"+a+"</td>");
+        i++;
+    }
+    document.write("</tr></table>");
+    </script>
+    </body>
+</html>

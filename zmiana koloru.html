@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>zmiana koloru</title>
+        </head>
+        <body>
+            <h1>zmiana koloru tła </h1>
+            <button onclick="zmien('red','czerwony',)">czerwony</button>
+            <button onclick="zmien('green','zielony')">zielony</button>
+            <button onclick="zmien('blue','niebieski')">niebieski</button>
+            <div id="info"> wybierz kolor </div>
+            <script>
+                function zmien(kolor, nazwa) {
+                    document.body.style.backgroundColor =kolor;
+                    document.getElementById("info").innerHTML = "wybrano kolor: " +nazwa;
+                }
+            </script>
+        </body>
+        </html>
+        

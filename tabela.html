@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Układ strony HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #111;
+        }
+
+        article {
+            width: 500px;
+            margin: 20px auto;
+            border: 2px solid #00f165;
+            padding: 10px;
+            background: #222; /* tło artykułu */
+        }
+
+        header {
+            background: #4caf50; /* Zielony */
+            border: 1px solid #2e7031;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        nav {
+            background: #2196f3; /* Niebieski */
+            border: 1px solid #0b5fa5;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        aside {
+            width: 25%;
+            background: #ff5722; /* Pomarańczowy */
+            border: 1px solid #b63b14;
+            padding: 15px;
+            margin-right: 10px;
+            color: #fff;
+        }
+
+        .sections {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        section:nth-child(1) {
+            background: #9c27b0; /* Fioletowy */
+            border: 1px solid #6d1979;
+            padding: 15px;
+            color: #fff;
+        }
+
+        section:nth-child(2) {
+            background: #ffca28; /* Żółty */
+            border: 1px solid #c79a00;
+            padding: 15px;
+        }
+
+        section:nth-child(3) {
+            background: #03a9f4; /* Jasny niebieski */
+            border: 1px solid #046d9e;
+            padding: 15px;
+            color: #fff;
+        }
+
+        footer {
+            background: #795548; /* Brązowy */
+            border: 1px solid #4e362d;
+            padding: 15px;
+            margin-top: 10px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<article>
+
+    <header>
+        <h1>Nagłówek strony</h1>
+    </header>
+
+    <nav>
+        <p>Menu nawigacyjne</p>
+    </nav>
+
+    <div class="content">
+
+        <aside>
+            <p>Panel boczny (aside)</p>
+        </aside>
+
+        <div class="sections">
+            <section>Sekcja 1</section>
+            <section>Sekcja 2</section>
+            <section>Sekcja 3</section>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Stopka strony</p>
+    </footer>
+
+</article>
+
+</body>
+</html>

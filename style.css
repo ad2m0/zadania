@@ -1,0 +1,63 @@
+body {
+    font-family: Garamond;
+}
+
+
+.lewy {
+    width: 25%;
+    height: 500px;
+    background-color: Lavender;
+    float: left;
+}
+
+.lewy {
+    width: 25%;
+    height: 300px;
+    background-color: Lavender;
+    float: left;
+}
+
+
+.prawy {
+    width: 75%;
+    height: 150px;
+    background-color: Indigo;
+    color: white;
+    font-size: 200%;
+    text-align: center;
+    float: left;
+}
+
+.prawy {
+    width: 75%;
+    height: 650px;
+    background-color: Lavender;
+    font-size: 200%;
+    text-align: center;
+    float: left;
+}
+
+
+footer {
+    background-color: Indigo;
+    color: white;
+    text-align: right;
+    clear: both;
+}
+
+
+ul {
+    list-style-type: square;
+}
+
+
+img {
+    padding: 5px;
+    margin: 10px;
+}
+
+
+img:hover {
+    padding: 4px;
+    border: 1px solid Indigo;
+}
