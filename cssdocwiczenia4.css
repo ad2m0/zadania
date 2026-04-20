@@ -1,0 +1,45 @@
+/* Tabela - wymagania główne */
+table {
+    width: 90%;
+    height: 600px;
+    border: 3px solid #000;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+caption {
+    font-size: 26px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+/* Komórki (td) - wymagania szczegółowe */
+td {
+    border: 1px solid #444;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 22px; /* Większy rozmiar tekstu */
+}
+
+th {
+    border: 1px solid #444;
+    background-color: #ddd;
+    padding: 10px;
+}
+
+/* Obrazki - wymiary 150px */
+img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover; /* Dzięki temu zdjęcia nie będą rozciągnięte */
+    border-radius: 8px;
+}
+
+/* Dodatkowe wymagania z polecenia */
+.wyroznienie {
+    background-color: #fff9c4; /* Tło dla wybranej komórki (np. Minecraft) */
+}
+
+.zdj {
+    background-color: #f0f0f0; /* Klasa dla komórek z obrazkami */
+}
