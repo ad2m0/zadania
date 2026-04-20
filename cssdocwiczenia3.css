@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.ozdobny-blok {
+    /* Wymagania dotyczące wymiarów i wycentrowania */
+    width: 400px;
+    height: 200px;
+    margin: auto; /* Wycentrowanie zgodnie z instrukcją */
+    
+    /* Styl tekstu wewnątrz */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+
+    /* KLUCZOWE USTAWIENIA Z ZADANIA: */
+    
+    /* 1. Musi być zdefiniowany border-style, aby border-image był widoczny */
+    border-style: solid; 
+    
+    /* 2. Grubość obramowania (min. 40px wg polecenia) */
+    border-width: 45px; 
+
+    /* 3. Border image - źródło, slice (cięcie), repeat (powtarzanie) */
+    /* Zastąp 'https://picsum.photos/100' swoim plikiem 'wzor.png' */
+    border-image-source: url('https://picsum.photos/100'); 
+    
+    /* Slice: określa jak pociąć obrazek (zazwyczaj wartość liczbowa bez px) */
+    border-image-slice: 30; 
+
+    /* Repeat: do wyboru stretch, repeat, round */
+    border-image-repeat: round; 
+}
