@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Kalkulator BMI</title>
+</head>
+<body>
+
+<h2>Kalkulator BMI</h2>
+<div id="wynik"></div>
+
+<script>
+function BMI(masa, wzrost) {
+    return masa / (wzrost * wzrost);
+}
+
+var masa = parseFloat(prompt("Podaj masę w kilogramach (np. 70):"));
+var wzrost = parseFloat(prompt("Podaj wzrost w metrach (np. 1.75):"));
+
+var komunikat = "";
+
+if (isNaN(masa) || isNaN(wzrost) || masa <= 0 || wzrost <= 0) {
+    komunikat = "Błąd! Podaj poprawne dodatnie liczby.";
+} else {
+    var wynik = BMI(masa, wzrost);
+    
+    if (wynik < 18.5) {
+        komunikat = "Niedowaga";
+    } 
+    else if (wynik < 25) {
+        komunikat = "Waga prawidłowa";
+    } 
+    else if (wynik < 30) {
+        komunikat = "Nadwaga";
+    } 
+    else {
+        komunikat = "Otyłość";
+    }
+
+    komunikat = "Twoje BMI wynosi: " + wynik.toFixed(2) + "<br>Ocena: " + komunikat;
+}
+
+document.getElementById("wynik").innerHTML = komunikat;
+</script>
+
+</body>
+</html>

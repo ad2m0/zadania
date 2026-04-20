@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ćwiczenie 1 - Bloki z obramowaniem</title>
+    <style>
+
+        div {
+            margin: 20px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+
+        
+        .blok-1 {
+            border-style: solid;
+            border-width: 3px;
+            border-color: green;
+        }
+
+       
+        .blok-2 {
+            border: 2px solid red;
+            border-radius: 15px;
+        }
+
+        
+        .blok-3 {
+            border: 2px solid blue;
+            
+            border-radius: 50px / 20px;
+        }
+
+        
+        .blok-4 {
+            border: 2px solid black;
+           
+            border-radius: 100px 10px 50px 0px;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="blok-1">
+        To jest pierwszy blok. Ma zielone obramowanie o grubości 3 pikseli i proste kąty.
+    </div>
+
+    <div class="blok-2">
+        Drugi blok jest czerwony. Jego rogi zostały delikatnie zaokrąglone przy użyciu właściwości border-radius.
+    </div>
+
+    <div class="blok-3">
+        W trzecim bloku niebieskie obramowanie ma inne zaokrąglenie w pionie, a inne w poziomie, co tworzy ciekawy efekt.
+    </div>
+
+    <div class="blok-4">
+        Czwarty blok ma bardzo duże, asymetryczne zaokrąglenia. Każdy róg ma przypisaną inną wartość, co nadaje mu kształt elipsy.
+    </div>
+
+</body>
+</html>

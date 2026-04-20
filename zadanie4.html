@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Wczasy nad Bałtykiem</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial;
+    background: linear-gradient(to bottom, #87CEFA, #FFD700);
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    font-size: 28px ;
+    color: white;
+}
+
+.container {
+    display: flex;
+}
+
+.left, .right {
+    width: 50%;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    font-weight: bold;
+    color: rgb(255, 175, 175);
+}
+
+input {
+    width: 60px;
+    margin: 5px;
+}
+
+button {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#wynik {
+    text-align: center;
+    margin-top: 10px;
+}
+
+i {
+    font-size: 14px;
+    color: #5fc09b;
+}
+
+.gallery img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+</style>
+
+</head>
+<body>
+
+<header>Wczasy nad Bałtykiem</header>
+
+<div class="container">
+
+    <div class="left">
+        <h3>Formularz zgłoszeniowy:</h3>
+
+        Liczba dzieci: <input type="number" id="dzieci" value="0"><br>
+        Liczba dorosłych: <input type="number" id="dorosli" value="0"><br>
+        Liczba noclegów: <input type="number" id="noclegi" value="0"><br>
+
+        <button onclick="oblicz()">Oblicz koszt</button>
+
+        <div id="wynik"></div>
+    </div>
+
+    <div class="right">
+        <h3>Galeria zdjęć</h3>
+        <div class="gallery">
+            <img src="https://www.worldatlas.com/upload/3c/20/12/shutterstock-204473680.jpg">
+            <img src="https://as1.ftcdn.net/v2/jpg/05/25/56/42/1000_F_525564217_YwJ4bur5nLy6CLtAamDvf7cWNFzUVsUZ.jpg">
+            <img src="https://cdn.pixabay.com/photo/2016/10/14/19/56/sea-1741046_1280.jpg"><br>
+            <img src="https://tse1.mm.bing.net/th/id/OIP.CgepSEKSdnlH__ZYXX57tQHaFj?rs=1&pid=ImgDetMain&o=7&rm=3">
+            <img src="https://bartekwpodrozy.pl/wp-content/uploads/2024/04/P1410199.jpg">
+            <img src="https://picsum.photos/100?6">
+        </div>
+    </div>
+
+</div>
+
+<footer>Korona Tour Sp. z o.o.</footer>
+
+<script>
+function oblicz() {
+    let dzieci = document.getElementById("dzieci").value;
+    let dorosli = document.getElementById("dorosli").value;
+    let noclegi = document.getElementById("noclegi").value;
+
+    // ceny (przykładowe)
+    let cenaDziecko = 50;
+    let cenaDorosly = 100;
+
+    let koszt = (dzieci * cenaDziecko + dorosli * cenaDorosly) * noclegi;
+
+    document.getElementById("wynik").innerHTML =
+        "<i>Całkowity koszt: " + koszt + " zł</i>";
+}
+</script>
+
+</body>
+</html>
