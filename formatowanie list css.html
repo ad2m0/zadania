@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formatowanie list w CSS</title>
+    <style>
+        #lista1 { list-style-type: square; }
+        #lista2 { list-style-type: upper-roman; }
+        #lista3 { list-style-type: lower-alpha; }
+        #lista4 { list-style-image: url("obrazek.png"); }
+        #lista5a { list-style-position: outside; }
+        #lista5b { list-style-position: inside; }
+        #lista-mieszana-glowna { list-style-type: decimal; }
+        .lista-mieszana-wewnetrzna { list-style-type: disc; }
+    </style>
+</head>
+<body>
+    <h1>Formatowanie list w CSS</h1>
+    <p>Zadanie na ocenę.</p>
+
+    <h2>Lista 1 – lista nieuporządkowana z punktorem square</h2>
+    <ul id="lista1">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>SQL</li>
+    </ul>
+    <p>Zastosowany styl: <code>list-style-type: square;</code></p>
+
+    <h2>Lista 2 – lista uporządkowana z numeracją rzymską</h2>
+    <ol id="lista2">
+        <li>Planowanie</li>
+        <li>Projekt</li>
+        <li>Kodowanie</li>
+        <li>Testowanie</li>
+        <li>Publikacja</li>
+    </ol>
+    <p>Zastosowany styl: <code>list-style-type: upper-roman;</code></p>
+
+    <h2>Lista 3 – lista uporządkowana z małymi literami alfabetu</h2>
+    <ol id="lista3">
+        <li>Informatyka</li>
+        <li>Programowanie</li>
+        <li>Grafika komputerowa</li>
+    </ol>
+    <p>Zastosowany styl: <code>list-style-type: lower-alpha;</code></p>
+
+    <h2>Lista 4 – lista z własnym obrazkiem zamiast punktora</h2>
+    <ul id="lista4">
+        <li>Moje hobby</li>
+        <li>Książki</li>
+        <li>Gry wideo</li>
+    </ul>
+    <p>Zastosowany styl: <code>list-style-image: url('obrazek.png');</code></p>
+
+    <h2>Lista 5 – porównanie położenia punktora (outside)</h2>
+    <ul id="lista5a">
+        <li>Klawiatura</li>
+        <li>Mysz</li>
+        <li>Monitor</li>
+        <li>Drukarka</li>
+        <li>Głośniki</li>
+    </ul>
+    <p>Zastosowany styl: <code>list-style-position: outside;</code></p>
+
+    <h2>Lista 5 – porównanie położenia punktora (inside)</h2>
+    <ul id="lista5b">
+        <li>Klawiatura</li>
+        <li>Mysz</li>
+        <li>Monitor</li>
+        <li>Drukarka</li>
+        <li>Głośniki</li>
+    </ul>
+    <p>Zastosowany styl: <code>list-style-position: inside;</code></p>
+
+    <h2>Wymaganie rozszerzające – lista mieszana</h2>
+    <ol id="lista-mieszana-glowna">
+        <li>Sprzęt komputerowy
+            <ul class="lista-mieszana-wewnetrzna">
+                <li>monitor</li>
+                <li>mysz</li>
+                <li>klawiatura</li>
+            </ul>
+        </li>
+        <li>Oprogramowanie
+            <ul class="lista-mieszana-wewnetrzna">
+                <li>edytor tekstu</li>
+                <li>przeglądarka</li>
+                <li>program graficzny</li>
+            </ul>
+        </li>
+    </ol>
+    <p>Zastosowane style: dla listy głównej <code>list-style-type: decimal;</code>, a dla list zagnieżdżonych <code>list-style-type: disc;</code>.</p>
+
+</body>
+</html>
